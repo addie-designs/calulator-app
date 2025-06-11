@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Calculator App</title>
+    <link rel="stylesheet" href="style.css"/>
+  </head>
+
+  <body>
+    <div class="calculator">
+
+    <div class="display" id="display">
+      <input type="text" class="input" disabled>
+      <input type="text" class="output" disabled>
+    </div>
+
+      <div class="buttons" id="buttons">
+
+          <div class="button1">
+
+              <div class="columnOne">
+              <button class="btn" id="one" >1</button>
+              <button class="btn" id="four" >4</button>
+              <button class="btn" id="seven" >7</button>
+              <button class="btn" id="dot" >.</button>
+            </div>
+
+            <div class="columnTwo">
+              <button class="btn" id="two" >2</button>
+              <button class="btn" id="five" >5</button>
+              <button class="btn" id="eight" >8</button>
+              <button class="btn" id="zero" >0</button>
+            </div>
+
+            <div class="columnThree">
+              <button class="btn" id="three">3</button>
+              <button class="btn" id="six" >6</button>
+              <button class="btn" id="nine">9</button>
+              <button class="btn" id="backspace" >K</button>
+            </div>
+          </div>
+
+
+          <div class="button2">
+
+            <div class="operations">
+             
+                <div class="operation1">
+                  <button id="clear"  onclick="clearAll()">C</button>
+                  <button id="multiply" >&#215</button>
+                  <button id="percent"  >%</button>
+                </div>
+  
+                <div class="operation2">
+                  <button id="divide" > &div;</button>
+                  <button id="add" >+</button>
+                  <button id="subtract">-</button>
+                </div>
+            
+            </div>
+
+            <div class="equal-container">
+                <button id="equal" >=</button>
+            </div>
+            
+
+          </div>
+
+
+        </div>
+
+        <div class="history" id="history">
+          <h4>History</h4>
+          <ul class="history-list" id="historylist" >
+            <!-- History items here  -->
+          </ul>
+          
+        </div> 
+    
+    </div>
+
+ <!-- <script  src ="calculator.js"> </script> -->
+  <script>
+    const equationInput = document.getElementById("input");
+const equationOutput = document.getElementById("output");
+const one = document.getElementById("one");
+const two = document.getElementById("two");
+const three = document.getElementById("three");
+const four = document.getElementById("four");
+const five = document.getElementById("five");
+const six = document.getElementById("six");
+const seven = document.getElementById("seven");
+const eight = document.getElementById("eight");
+const nine = document.getElementById("nine");
+const zero = document.getElementById("zero");
+const decimal = document.getElementById("dot");
+const backspace = document.getElementById("backspace");
+const clear = document.getElementById("clear");
+const divide = document.getElementById("divide");
+const multiply = document.getElementById("multiply");
+const add = document.getElementById("add");
+const percentage = document.getElementById("percent");
+const subtract = document.getElementById("subtract");
+const calculate = document.getElementById("equal");
+
+function addtoInput(value){
+  equationInput.s
+  equationInput.setAttribute.value(value)
+}
+  </script>
+
+  </body>
+</html>
